@@ -282,7 +282,7 @@ The authors try to show that their algorithm can speedup programs, when compared
 
 ### Which points do the authors try to prove with experiments? (PHI)
 
-FILL *me*
+The speed of the algorithm for different programs as well as scaled on program size compared to the original algorithm. A proof is provided in the previous section.
 
 ### Are the experiments rigorous enough?
 
@@ -290,7 +290,7 @@ I think the authors could have been more rigorous. They have not used confidence
 
 ### Are the experiments rigorous enough? (PHI)
 
-FILL *me*
+I think the proof coupled with the several programs in contrast to the original algorithm as well as provided curve with program size severs enough evidence. One needs to understand how the algorithm works and be satisfied with the proof to agree with them more.
 
 ### Which visual resources have the authors used to present data?
 
@@ -298,7 +298,7 @@ They use two figures with bar charts, so show speedup and code size reduction. T
 
 ### Which visual resources have the authors used to present data? (PHI)
 
-FILL *me*
+Tables as bar graphs as well as raw values for different programs, curves (on performance with program size). Both in comparision with the original algorithm.
 
 ### Which statistical theory have the authors used in this paper?
 
@@ -306,7 +306,7 @@ The authors do not use much statistics in this paper. They have run each benchma
 
 ### Which statistical theory have the authors used in this paper? (PHI)
 
-FILL *me*
+Raw performance figures with the calculated speedup and proofs as used.
 
 ## Resources (O)
 
@@ -314,14 +314,30 @@ FILL *me*
 
 They use pseudo-code to represent the algorithms. The style resembles a bit Algol. I found it a bit confusing to follow the pseudo-code.
 
+### Do the authors use any particular type of notation? (PHI)
+
+FILL *me*
+
 ### Which examples have the authors used to present their ideas?
 
 The paper uses only one example, that is introduced in the backgrounds section, and then is used throughout the rest of the manuscript, notably in Section 3. The example is a simple program that provides some opportunities of optimization. I do not think they could have made it any simpler. The example has the virtue of showing how the proposed approach yields better results in face of profiling information.
+
+### Which examples have the authors used to present their ideas? (PHI)
+
+FILL *me*
 
 ### Which visual resources have the authors used to explain their points?
 
 The authors use pseudo-code, and three elaborate figures. Fig 3 shows the dependence-graph of the running example. Fig 4 and Fig 6 illustrates different phases of the algorithm. Fig 4 shows the weights that the algorithm finds, given the profiling information, and Fig 6 shows the final solution of the problem.
 
+### Which visual resources have the authors used to explain their points? (PHI)
+
+FILL *me*
+
 ### (Only in case there is on-line material available to support the paper) Which material is publicly available?
 
 The authors have made available a small prototype of their implementation. I tried to download, but it is not easy to install. Simply typing 'making' in the working directory yields a list of errors. They have left a small README.txt file that explains how to test their approach.
+
+### (Only in case there is on-line material available to support the paper) Which material is publicly available? (PHI)
+
+FILL *me*
