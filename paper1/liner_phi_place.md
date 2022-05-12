@@ -74,17 +74,33 @@ There is a section on SSA form, but not on linear time placement of phi nodes.
 
 The authors have developed a new algorithm based on the min-cut problem to solve partial redundancy elimination with profiling. They assign weights to the edges of the data-dependence graph of a program, and then find a min-cut in this graph. This cut determines the points where expressions should be moved in.
 
+### What is the key idea used to solve the problem? (PHI)
+
+FILL *me*
+
 ### Why is this specific idea different from what had been done before?
 
 No particular paper seems to have addressed the problem of doing partial redundancy elimination in SSA form programs using profiling information. By joining these two ideas: SSA form and profiling, the authors proposed something new.
+
+### Why is this specific idea different from what had been done before? (PHI)
+
+FILL *me*
 
 ### Is there any algorithm involved in the solution?
 
 There is the algorithm to solve the min-cut problem in directed graphs. This algorithm has polynomial time solution. It models the min-cut problem as a flow problem.
 
+### Is there any algorithm involved in the solution? (PHI)
+
+FILL *me*
+
 ### Is the solution exact, or does it approximate an optimal? In the latter case, what would be the price of finding the optimal?
 
 The solution is exact. Of course, the exact solution relies on profiling information. However, profiling is only good if it reflects the actual future runs of a program.
+
+### Is the solution exact, or does it approximate an optimal? In the latter case, what would be the price of finding the optimal? (PHI)
+
+FILL *me*
 
 ## The Organization of the Paper (X)
 
@@ -205,7 +221,7 @@ Yes. The first paragraph of the introduction is clearly a declarative paragraph,
   * (Section 6, Paragraph 3):
     * *(Enumeration of comparision of implementation in bit-vecotr and linked list.)*
 
-## The related works (*)
+## The related works (X)
 
 ### What is the purpose of the related works section in this paper?
 
@@ -213,7 +229,8 @@ The main purpose of the related works section is to compare some previous attemp
 
 ### What is the purpose of the related works section in this paper? (PHI)
 
-FILL *ME*
+Points out that present techiniuqes present a quadratic time issue, identifies similar work in this endivure but highlights that while other papers provide same results but they do not compute for example dominance frontiers (or are more dense that slow down dataflow) that can be used in other phases of dataflow analysis. Identifies the similariteis with Cytron et al. paper and clearly identifies the difference they have made.
+Notify potential other work that can benefit from this speedup and calculating intermediate representations this paper uses.
 
 ### What are the earliest papers about this problem?
 
@@ -221,7 +238,7 @@ The earliest paper about partial redundancy elimination seems to have been "Lazy
 
 ### What are the earliest papers about this problem? (PHI)
 
-FILL *ME*
+The paper specifically mentions Cyton et al. in 1989 as first propose of the algorithm, while other work on sparse analysis is also mentioned as 1982 and 1987.
 
 ### What is the most seminal paper in this field of research?
 
@@ -229,7 +246,21 @@ The most seminal paper seems to have been the first, "Lazy Code Motion". It has,
 
 ### What is the most seminal paper in this field of research? (PHI)
 
-FILL *ME*
+An Efficient Method of Computing Static Single Assignment Form 1989 (Cytron, ...) 310 citation that proposed the new algorithm that is referenced heavily in this paper.
+
+The work for SSA form is mention in Cytron et al.:
+
+* J. Ferrante, K. J. Ottenstein, and J. D. Warren. The program dependence graph and its use in optimization. ACM pans. on Programming Languages and Systems, 9(3):319-349, July 1987. *(1921 citation)*
+
+* B. Alpern, M. N. Wegman, and F. K. Zadeck. Detecting equality of values in programs. Conf Rec. Fifteenth ACM Symp. on Principles of Programming Languages, January 1988.
+
+* B. K. Rosen, M. N. Wegman, and F. K. Zadeck. Global value numbers and redundant computations. Conf. Rec. Fifteenth ACM Symp. on Principles of Programming Languages, January 1988.
+
+* Taken from: [The Way of the Computer Scientist](<https://www.sciencedirect.com/topics/computer-science/data-flow-analysis>) for dataflow analysis
+  * *Vyssotsky at Bell Labs 1960s for dataflow analysis*
+  * *Kildall 1973 paper, work by Hecht and Ullman for Iterative dataflow analysis*
+
+Wikipedia also has many reference with Kendall at the top amoung many others.
 
 ### Which good conferences have recently published papers about similar problems?
 
@@ -237,7 +268,11 @@ Partial Redundancy Elimination is not exactly a hot topic of research. None of t
 
 ### Which good conferences have recently published papers about similar problems? (PHI)
 
-FILL *ME*
+* Sebastian Buchwald, Denis Lohner, and Sebastian Ullrich. 2016. Verified construction of static single assignment form. In Proceedings of the 25th International Conference on Compiler Construction (CC 2016). Association for Computing Machinery, New York, NY, USA, 67–76.
+
+* Leonardo Filipe Rigon, Paulo Torrens, and Cristiano Vasconcellos. 2020. Inferring types and effects via static single assignment. Proceedings of the 35th Annual ACM Symposium on Applied Computing. Association for Computing Machinery, New York, NY, USA, 1314–1321.
+
+* David Ittah, Thomas Häner, Vadym Kliuchnikov, and Torsten Hoefler. 2021. QIRO: A Static Single Assignment-based Quantum Program Representation for Optimization. ACM Transactions on Quantum Computing Just Accepted (August 2021).
 
 ## Validation (O)
 
@@ -245,17 +280,33 @@ FILL *ME*
 
 The authors try to show that their algorithm can speedup programs, when compared to previous approaches to partial redundancy elimination. They try to show two points: their algorithm yields better performance (Table 1 and Fig. 11), and their algorithm yields smaller code sizes (Fig 12).
 
+### Which points do the authors try to prove with experiments? (PHI)
+
+FILL *me*
+
 ### Are the experiments rigorous enough?
 
 I think the authors could have been more rigorous. They have not used confidence intervals in their results. They also have tried their approach in only one compiler, and have compared it against an algorithm that they have implemented. It would have been better, in my opinion, if they had tried to compare their algorithm against some PRE implementation available in an industrial quality compiler.
+
+### Are the experiments rigorous enough? (PHI)
+
+FILL *me*
 
 ### Which visual resources have the authors used to present data?
 
 They use two figures with bar charts, so show speedup and code size reduction. This data is repeated in a table. The table provides results with one decimal digit of accuracy. I believe that they have used this redundancy to make sure that the reader can understand the amount of performance improvement that the new technique delivers.
 
+### Which visual resources have the authors used to present data? (PHI)
+
+FILL *me*
+
 ### Which statistical theory have the authors used in this paper?
 
 The authors do not use much statistics in this paper. They have run each benchmark five times, and have thrashed the slowest and the fastest results. The final result is the average of the three left runs. They use arithmetic mean in all the results.
+
+### Which statistical theory have the authors used in this paper? (PHI)
+
+FILL *me*
 
 ## Resources (O)
 
