@@ -1,4 +1,4 @@
-# Linear time algorithm for placing PHI nodes (Discusssion v.0.0.0)
+# Linear time algorithm for placing PHI nodes (Discussion v.0.0.0)
 
 ## The problem that the paper discusses (X)
 
@@ -8,7 +8,7 @@ The paper solves partial redundancy elimination with profiling information. Basi
 
 ### What is the specific problem that the paper solves (PHI)
 
-The paper provides a way to place phi nodes (for static single assignment form, SSA) in linear time as opposed to previous methods that require precomputing domincance frontiers.
+The paper provides a way to place phi nodes (for static single assignment form, SSA) in linear time as opposed to previous methods that require pre-computing dominance frontiers.
 
 ### Why is this problem important
 

@@ -1,10 +1,10 @@
-# Linear time algorithm for placing PHI nodes (Discusssion v.0.0.0)
+# Linear time algorithm for placing PHI nodes (Discussion v.0.0.0)
 
 ## The problem that the paper discusses
 
 ### What is the specific problem that the paper solves (PHI)
 
-The paper provides a way to place phi nodes (for static single assignment form, SSA) in linear time as opposed to previous methods that require precomputing domincance frontiers.
+The paper provides a way to place phi nodes (for static single assignment form, SSA) in linear time as opposed to previous methods that require pre-computing dominance frontiers.
 
 ### Why is this problem important (PHI)
 
@@ -17,7 +17,7 @@ Code analysis is used in coding environments to assist programmers.
 
 ### What is the theory upon which the problem is defined? (PHI)
 
-Since we are dealing with the internal represantation of a program as nodes, inevitable we must deal with graph-theory and graph algorithms.
+Since we are dealing with the internal representation of a program as nodes, inevitable we must deal with graph-theory and graph algorithms.
 
 ## The context of the paper (X)
 
@@ -35,7 +35,7 @@ Before SSA form, use-def chains were used in intermediate representation.
 
 ### Is there any book that provides an in-depth overview of this problem? (PHI)
 
-The dragon book mentions SSA form and PHI nodes and it also has a section about calculating dominator nodes as well as dominance forntiers. An algorithm for placing PHI nodes non trivially is not aparent.
+The dragon book mentions SSA form and PHI nodes and it also has a section about calculating dominator nodes as well as dominance frontiers. An algorithm for placing PHI nodes non trivially is not apparent.
 
 ### What can we find about this context in wikipedia? (PHI)
 
@@ -45,11 +45,11 @@ There is a section on SSA form, but not on linear time placement of phi nodes.
 
 ### What is the key idea used to solve the problem? (PHI)
 
-Identification of key properties of a flow graph of a program. No need for precomputing dominance forntiers and as a consequence of the algorithm the paper presents it calculated the dominance frontier that can be used in other aspects of the phases of dataflow analysis in linear time according to the claims (see algorithm).
+Identification of key properties of a flow graph of a program. No need for precomputing dominance frontiers and as a consequence of the algorithm the paper presents it calculated the dominance frontier that can be used in other aspects of the phases of dataflow analysis in linear time according to the claims (see algorithm).
 
 ### Why is this specific idea different from what had been done before? (PHI)
 
-This paper employes the same principle but with a different approach ensuring a linear time instead of a potentially being quadratic.
+This paper employees the same principle but with a different approach ensuring a linear time instead of a potentially being quadratic.
 
 ### Is there any algorithm involved in the solution? (PHI)
 
@@ -63,20 +63,20 @@ The solution is exact accompanied with a proof of correctness and argument for c
 
 ## How was the abstract organized? (PHI)
 
-"Context - Problem - Solution - Comparision - Results"
+"Context - Problem - Solution - Comparison - Results"
 
 ## How was the introduction organized? (PHI)
 
 Six paragraphs of:
 
-1. Context/(Current techiniques)
+1. Context/(Current techniques)
 2. Problem
 3. Solution
 4. Notation/(Internal details)
 5. Implementation/Results
 6. Implications/(Sections overview)
 
-This paper aims to argue for improvement of a step in the SSA form used in the seminal paper on intermediate reoresentation, this is why a lot of detail is given in comparision to the seminal paper.
+This paper aims to argue for improvement of a step in the SSA form used in the seminal paper on intermediate representation, this is why a lot of detail is given in comparison to the seminal paper.
 
 ## What is discussed in each section of the paper? (PHI)
 
@@ -93,31 +93,31 @@ The paper has eight sections, which are divided as follows:
 
 ## What was left for the conclusion? (PHI)
 
-Reiteration of the introduction and emphisas on the simplcity of techinque used as well as implications, implementation, results and speedup. Ending with references to companion papers where solution is used in other dataflow problems.
+Reiteration of the introduction and emphasis on the simplicity of technique used as well as implications, implementation, results and speedup. Ending with references to companion papers where solution is used in other dataflow problems.
 
 ## The Written Style (X)
 
 ### Can you give a title to each paragraph in the introduction? (PHI)
 
 1) The phases of dataflow where placing of phi nodes is important;
-2) Identification of redundancy in present techniuqe;
+2) Identification of redundancy in present technique;
 3) Optimization in the algorithm for placing phi nodes;
 4) Introduction to notation used in solution;
-5) Implementation and comparision of both techinuqes;
-6) Potential further usecases and overview of sections;
+5) Implementation and comparison of both technique;
+6) Potential further use-cases and overview of sections;
 
 ### Can you find examples of sentence topics to every paragraph in the introduction? (PHI)
 
 1. The algorithms for computing these intermediate representations have one common step- computing program points where data flow information must be “merged”, the so called **phi-nodes** *(2nd sentence)*
-1. The time complexity of the original algorithm depends on the size of the dominance frontier. Although the size of the dominance frontier is **linear** for many programs (as was noted by Cytron et al.), ... *(1st sentance)*
-1. In this paper, we present **a linear time algorithm for computing the desired set of phi-nodes for N**. without precomputing the domtnance frontiers for all the nodes. *(1st sentence)*
+1. The time complexity of the original algorithm depends on the size of the dominance frontier. Although the size of the dominance frontier is **linear** for many programs (as was noted by Cytron et al.), ... *(1st sentence)*
+1. In this paper, we present **a linear time algorithm for computing the desired set of phi-nodes for N**. without pre-computing the dominance frontiers for all the nodes. *(1st sentence)*
 1. The levels of the nodes in the dominator tree are used to order the computation of dominance frontiers of those nodes which are essential to **compute the final set of phi-nodes** in a bottom-up fashion. *(3rd sentence)*
 1. Again our algorithm exhibited **a linear behavior** compared to the quadratic behavior of the original algorithm. *(6th sentence)*
 1. The significance of the algorithm presented in this paper goes beyond to merely computing **phi-nodes** for SEGS or SSA form. *(1st sentence)*
 
 ### Can you give examples of techniques used to connect different paragraphs? (PHI)
 
-The discussion of an aspect of the paper topic in one paragraph flows into the second paragraph where the aspect is touched on in a different light but also the issue presented in the previous paragprah is elaborated on.
+The discussion of an aspect of the paper topic in one paragraph flows into the second paragraph where the aspect is touched on in a different light but also the issue presented in the previous paragraph is elaborated on.
 For example:
 
 1. Again our algorithm exhibited a linear behavior compared to the quadratic behavior of the original algorithm. *(Section 1, paragraph 5)*
@@ -129,7 +129,7 @@ For example:
   * (Section 1, Paragraph 1):
     * (Sentence 1)
     Static Single Assignment (SSA) form [CFR+ 91], Sparse Evaluation Graphs (SEGS) [CCF91 ], and other related intermediate representations have been successfully used for efficient data flow analysis and program transformations...
-    *(Continuies on to provide support with reference to other works.)*
+    *(Continues on to provide support with reference to other works.)*
 
 * Illustrative
   * (Section 1, Paragraph 2):
@@ -139,13 +139,13 @@ For example:
 
 * Enumerative
   * (Section 6, Paragraph 3):
-    * *(Enumeration of comparision of implementation in bit-vecotr and linked list.)*
+    * *(Enumeration of comparison of implementation in bit-vector and linked list.)*
 
 ## The related works (X)
 
 ### What is the purpose of the related works section in this paper? (PHI)
 
-Points out that present techiniuqes present a quadratic time issue, identifies similar work in this endivure but highlights that while other papers provide same results but they do not compute for example dominance frontiers (or are more dense that slow down dataflow) that can be used in other phases of dataflow analysis. Identifies the similariteis with Cytron et al. paper and clearly identifies the difference they have made.
+Points out that present techniques present a quadratic time issue, identifies similar work in this endeavor but highlights that while other papers provide same results but they do not compute for example dominance frontiers (or are more dense that slow down dataflow) that can be used in other phases of dataflow analysis. Identifies the similarities with Cytron et al. paper and clearly identifies the difference they have made.
 Notify potential other work that can benefit from this speedup and calculating intermediate representations this paper uses.
 
 ### What are the earliest papers about this problem? (PHI)
@@ -168,7 +168,7 @@ The work for SSA form is mention in Cytron et al.:
   * *Vyssotsky at Bell Labs 1960s for dataflow analysis*
   * *Kildall 1973 paper, work by Hecht and Ullman for Iterative dataflow analysis*
 
-Wikipedia also has many reference with Kendall at the top amoung many others.
+Wikipedia also has many reference with Kendall at the top among many others.
 
 ### Which good conferences have recently published papers about similar problems? (PHI)
 
@@ -208,8 +208,8 @@ The optimization of an algorithm (by Cyton et al.) that places phi nodes with do
 
 ### Which visual resources have the authors used to explain their points? (PHI)
 
-Use of Mathematical notation for graph algorithm accompinied with example figures of the graphs before and after the computation.
-Psuedo-code as well as definitions of data structures used accompinied with example figure that shows the phi node insertion on the data structure after computation.
+Use of Mathematical notation for graph algorithm accompanied with example figures of the graphs before and after the computation.
+Psuedo-code as well as definitions of data structures used accompanied with example figure that shows the phi node insertion on the data structure after computation.
 Figure 5, 6, 7 and show the performance details.
 
 ### (Only in case there is on-line material available to support the paper) Which material is publicly available? (PHI)
