@@ -1,4 +1,4 @@
-# Linear time algorithm for placing PHI nodes (Discussion v.0.0.0)
+# Linear time algorithm for placing PHI nodes (Discussion v.0.0.1)
 
 ## The problem that the paper discusses
 
