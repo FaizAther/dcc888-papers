@@ -68,7 +68,7 @@ There is an entire article about partial redundancy elimination in the wikipedia
 
 There is a section on SSA form, but not on linear time placement of phi nodes.
 
-## The Solution (O)
+## The Solution (X)
 
 ### What is the key idea used to solve the problem?
 
@@ -76,7 +76,7 @@ The authors have developed a new algorithm based on the min-cut problem to solve
 
 ### What is the key idea used to solve the problem? (PHI)
 
-FILL *me*
+Identification of key properties of a flow graph of a program. No need for precomputing dominance forntiers and as a consequence of the algorithm the paper presents it calculated the dominance frontier that can be used in other aspects of the phases of dataflow analysis in linear time according to the claims (see algorithm).
 
 ### Why is this specific idea different from what had been done before?
 
@@ -84,7 +84,7 @@ No particular paper seems to have addressed the problem of doing partial redunda
 
 ### Why is this specific idea different from what had been done before? (PHI)
 
-FILL *me*
+This paper employes the same principle but with a different approach ensuring a linear time instead of a potentially being quadratic.
 
 ### Is there any algorithm involved in the solution?
 
@@ -92,7 +92,7 @@ There is the algorithm to solve the min-cut problem in directed graphs. This alg
 
 ### Is there any algorithm involved in the solution? (PHI)
 
-FILL *me*
+Yes, there are multiple cleverly algorithms, that use graph traversal and properties of based on graph theory to justify properties on the internal representation of the program to validate their claims.
 
 ### Is the solution exact, or does it approximate an optimal? In the latter case, what would be the price of finding the optimal?
 
@@ -100,7 +100,7 @@ The solution is exact. Of course, the exact solution relies on profiling informa
 
 ### Is the solution exact, or does it approximate an optimal? In the latter case, what would be the price of finding the optimal? (PHI)
 
-FILL *me*
+The solution is exact accompanied with a proof of correctness and argument for complexity as compared to the authors argument that the Cytron et al. paper's implementation was complicated and partial description was provided.
 
 ## The Organization of the Paper (X)
 
