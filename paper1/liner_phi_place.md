@@ -16,7 +16,7 @@ Partial redundancy elimination is important because it tends to speedup code. Mo
 
 ### Why is this problem important (PHI)
 
-Phi nodes are used in SSA form that is beneficial to speed up dataflow analysis on basic blocks.
+Phi nodes are used in SSA form that is beneficial to speed up dataflow analysis on basic blocks, this can be used to find bugs, security flaws and in general make code more robust rather than relying on someone to manually verify it.
 
 ### Who will benefit immediately from the solution of this problem
 
@@ -24,7 +24,8 @@ The main profiter is the compiler's back-end. This optimization may be implement
 
 ### Who will benefit immediately from the solution of this problem (PHI)
 
-Dataflow analysis is the cornerstone for code analysis, speeding up the SSA form that makes dataflow analysis faster will help to speedup compilation time.
+Dataflow analysis is the cornerstone for code analysis, speeding up the SSA form that makes dataflow analysis faster will help to speedup analysis time.
+Code analysis is used in coding environments to assist programmers.
 
 ### What is the theory upon which the problem is defined?
 
@@ -50,7 +51,11 @@ Partial Redundancy Elimination has been around for, at least, four decades. Prof
 
 ### Since when is this context source of research? (PHI)
 
-Before SSA form, use-def chains were used in intermediate representation based on information form the ACM library can be found Ron Cytron, Jeanne Ferrante, Barry K. Rosen, Mark N. Wegman, and F. Kenneth Zadeck. 1991. Efficiently computing static single assignment form and the control dependence graph. ACM Trans. Program. Lang. Syst. 13, 4 (Oct. 1991), 451–490. [acm link](<https://doi.org/10.1145/115372.115320>) and then this paper appeared in 1995.
+It appears dataflow is attributed to Vyssotsky at Bell Labs 1960s.
+The main paper referenced is Cytron et al from 1989.
+Based on information form the ACM library can be found Ron Cytron, Jeanne Ferrante, Barry K. Rosen, Mark N. Wegman, and F. Kenneth Zadeck. 1991. Efficiently computing static single assignment form and the control dependence graph. ACM Trans. Program. Lang. Syst. 13, 4 (Oct. 1991), 451–490. [acm link](<https://doi.org/10.1145/115372.115320>) and then this paper appeared in 1995.
+Before SSA form, use-def chains were used in intermediate representation.
+*(See question: What is the most seminal paper in this field of research?)*
 
 ### Is there any book that provides an in-depth overview of this problem?
 
