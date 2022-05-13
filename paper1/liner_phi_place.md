@@ -274,7 +274,7 @@ Partial Redundancy Elimination is not exactly a hot topic of research. None of t
 
 * David Ittah, Thomas Häner, Vadym Kliuchnikov, and Torsten Hoefler. 2021. QIRO: A Static Single Assignment-based Quantum Program Representation for Optimization. ACM Transactions on Quantum Computing Just Accepted (August 2021).
 
-## Validation (O)
+## Validation (X)
 
 ### Which points do the authors try to prove with experiments?
 
@@ -308,7 +308,7 @@ The authors do not use much statistics in this paper. They have run each benchma
 
 Raw performance figures with the calculated speedup and proofs as used.
 
-## Resources (O)
+## Resources (X)
 
 ### Do the authors use any particular type of notation?
 
@@ -316,7 +316,7 @@ They use pseudo-code to represent the algorithms. The style resembles a bit Algo
 
 ### Do the authors use any particular type of notation? (PHI)
 
-FILL *me*
+Simple standard psuedo-code.
 
 ### Which examples have the authors used to present their ideas?
 
@@ -324,15 +324,17 @@ The paper uses only one example, that is introduced in the backgrounds section, 
 
 ### Which examples have the authors used to present their ideas? (PHI)
 
-FILL *me*
+The optimization of an algorithm (by Cyton et al.) that places phi nodes with dominance frontiers is talked out extensively in the introduction and is hashed out in the Background and notations section.
 
 ### Which visual resources have the authors used to explain their points?
 
 The authors use pseudo-code, and three elaborate figures. Fig 3 shows the dependence-graph of the running example. Fig 4 and Fig 6 illustrates different phases of the algorithm. Fig 4 shows the weights that the algorithm finds, given the profiling information, and Fig 6 shows the final solution of the problem.
 
-### Which visual resources have the authors used to explain their points? (PHI)
+### Which visual resources have the authors used to explain their points? (PHI) (O)
 
-FILL *me*
+Use of Mathematical notation for graph algorithm accompinied with example figures of the graphs before and after the computation.
+Psuedo-code as well as definitions of data structures used accompinied with example figure that shows the phi node insertion on the data structure after computation.
+Figure 5, 6, 7 and show the performance details.
 
 ### (Only in case there is on-line material available to support the paper) Which material is publicly available?
 
@@ -340,4 +342,4 @@ The authors have made available a small prototype of their implementation. I tri
 
 ### (Only in case there is on-line material available to support the paper) Which material is publicly available? (PHI)
 
-FILL *me*
+N/A.
