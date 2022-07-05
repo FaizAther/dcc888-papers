@@ -171,7 +171,9 @@ No related work section, however there is a lot of detail in Section 2, Bacgroun
 ### Which points do the authors try to prove with experiments?
 
 - Reporting number of divergent variables.
+
 - Performance improvement of generated code.
+
 - Register pressure.
 
 ### Are the experiments rigorous enough?
