@@ -216,35 +216,45 @@ The authors sometimes mention a challenge in the last sentence of the paragraph,
 
 Yes. The first paragraph of the introduction is clearly a declarative paragraph, because the authors start it with a thesis topic, e.g., "Partial Redundancy Elimination is one of the most important compiler optimizations", and then provide arguments that justify this thesis. The second paragraph of section 2 is illustrative. The authors are, in this case, explaining how classical PRE is unable to cope with a specific program. Finally, the first paragraph of the related works section (Section 4) is enumerative, as the authors are listing a number of previous attempts to solve the PRE problem in dynamic languages.
 
-## The related works (O)
+## The related works (X)
 
-### What is the purpose of the related works section in this paper? (DA) (O)
+### What is the purpose of the related works section in this paper? (DA) (X)
 
-*fill* me
+No related work section, however there is a lot of detail in Section 2, Bacground about related works with references and key differences.
 
 ### What is the purpose of the related works section in this paper? (PR)
 
 The main purpose of the related works section is to compare some previous attempts to solve PRE with the proposed solution. The authors do not provide a general overview of the field. They also do not talk about the history of the problem. They start with the most recent solutions, and only talk about those that most closely compare to theirs.
 
-### What are the earliest papers about this problem? (DA) (O)
+### What are the earliest papers about this problem? (DA) (X)
 
-*fill* me
+- The ILLIAC IV Computer (G H Barnes et al.) 1968
 
 ### What are the earliest papers about this problem? (PR)
 
 The earliest paper about partial redundancy elimination seems to have been "Lazy Code Motion", by Knoop et al., but the authors do not talk about this paper in particular. I had to find it in the description of PRE, available in the wikipedia.
 
-### What is the most seminal paper in this field of research? (DA) (O)
+### What is the most seminal paper in this field of research? (DA) (X)
 
-*fill* me
+- TRANQUIL: a language for an array processing computer (Norman E. Abel et al.)
+
+- The ILLIAC IV Computer (G H Barnes et al.)
+
+- Barrier inference (Alex Aiken et al.)
 
 ### What is the most seminal paper in this field of research? (PR)
 
 The most seminal paper seems to have been the first, "Lazy Code Motion". It has, as of March 13th of 2013, 615 citations in google scholar. Another paper that seems relatively important in this field is "A Variation of Knoop, Ruthing, and Steffen's Lazy Code Motion", which has 361 citations.
 
-### Which good conferences have recently published papers about similar problems? (DA) (O)
+### Which good conferences have recently published papers about similar problems? (DA) (X)
 
-*fill* me
+- ACM Transactions on Parallel Computing (2021)
+
+  - Pointer-Based Divergence Analysis for OpenCL 2.0 Programs (Shao-Chung Wang et al.)
+
+- ACM Transactions on Architecture and Code Optimization (2018)
+
+  - On-GPU Thread-Data Remapping for Branch Divergence Reduction (Huanxin Lin et al.)
 
 ### Which good conferences have recently published papers about similar problems? (PR)
 
