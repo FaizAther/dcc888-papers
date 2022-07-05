@@ -260,35 +260,37 @@ The most seminal paper seems to have been the first, "Lazy Code Motion". It has,
 
 Partial Redundancy Elimination is not exactly a hot topic of research. None of the good conferences that I know have published papers about this topic in the recent years. The references used in the paper also only contain old publications. The most recent is a paper by XX et al., "XXX", which was published in ASPLOS in 2005.
 
-## Validation (O)
+## Validation (X)
 
-### Which points do the authors try to prove with experiments? (DA) (O)
+### Which points do the authors try to prove with experiments? (DA) (X)
 
-*fill* me
+- Reporting number of divergent variables.
+- Performance improvement of generated code.
+- Register pressure.
 
 ### Which points do the authors try to prove with experiments? (PR)
 
 The authors try to show that their algorithm can speedup programs, when compared to previous approaches to partial redundancy elimination. They try to show two points: their algorithm yields better performance (Table 1 and Fig. 11), and their algorithm yields smaller code sizes (Fig 12).
 
-### Are the experiments rigorous enough? (DA) (O)
+### Are the experiments rigorous enough? (DA) (X)
 
-*fill* me
+Since their work is used in an industry scenerio they have provided more than enough experiments.
 
 ### Are the experiments rigorous enough? (PR)
 
 I think the authors could have been more rigorous. They have not used confidence intervals in their results. They also have tried their approach in only one compiler, and have compared it against an algorithm that they have implemented. It would have been better, in my opinion, if they had tried to compare their algorithm against some PRE implementation available in an industrial quality compiler.
 
-### Which visual resources have the authors used to present data? (DA) (O)
+### Which visual resources have the authors used to present data? (DA) (X)
 
-*fill* me
+Pi Charts, bar graphs, tables and plots.
 
 ### Which visual resources have the authors used to present data? (PR)
 
 They use two figures with bar charts, so show speedup and code size reduction. This data is repeated in a table. The table provides results with one decimal digit of accuracy. I believe that they have used this redundancy to make sure that the reader can understand the amount of performance improvement that the new technique delivers.
 
-### Which statistical theory have the authors used in this paper? (DA) (O)
+### Which statistical theory have the authors used in this paper? (DA) (X)
 
-*fill* me
+Not much simple benchmarks, raw performance numbers.
 
 ### Which statistical theory have the authors used in this paper? (PR)
 
