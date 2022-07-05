@@ -4,7 +4,7 @@
 
 ### What is the specific problem that the paper solves (DA) (X)
 
-Introduction of a static analysis that discovers data divergence (coined, Divergence Analysis).
+Introduction of a static analysis that discovers data, control divergence (called, Divergence Analysis) to produce code for better register reousrce management in SIMD execution model.
 
 ### What is the specific problem that the paper solves (PR)
 
@@ -28,7 +28,7 @@ The main profiter is the compiler's back-end. This optimization may be implement
 
 ### What is the theory upon which the problem is defined? (DA) (X)
 
-Static Analysis is the study of a program source code for compiler optimization phase of the pipline.
+Static Analysis is the study of a program source code for compiler optimization phase of the code generation pipline.
 
 ### What is the theory upon which the problem is defined? (PR)
 
@@ -47,7 +47,7 @@ This is a compiler's paper. It deals with partial redundancy elimination that is
 ### Since when is this context source of research? (DA) (X)
 
 The authors have mentioned several material and have pointed out the close links this paper mentioning the key differences in detail.
-Automatic optimizations have been around for deacdes, the authors have mentioned various papers from the 1990's and early 2000's.
+Automatic optimizations have been around for deacdes, the authors have mentioned various papers from the 1960's, 1990's and early 2000's.
 
 ### Since when is this context source of research? (PR)
 
@@ -63,41 +63,43 @@ Yes. As an example, we can find about partial redundancy elimination in the Drag
 
 ### What can we find about this context in wikipedia? (DA) (X)
 
-<https://en.wikipedia.org/wiki/Data_dependency>
+<https://en.wikipedia.org/wiki/Data_dependency>.
 
 ### What can we find about this context in wikipedia? (PR)
 
 There is an entire article about partial redundancy elimination in the wikipedia, available at [www.XXX](<http://www.XXX>). There is also an article about profiling at [www.XXX](<http://www.XXX>).
 
-## The Solution (O)
+## The Solution (X)
 
-### What is the key idea used to solve the problem? (DA) (O)
+### What is the key idea used to solve the problem? (DA) (X)
 
-*fill* me
+Static Analysis.
 
 ### What is the key idea used to solve the problem? (PR)
 
 The authors have developed a new algorithm based on the min-cut problem to solve partial redundancy elimination with profiling. They assign weights to the edges of the data-dependence graph of a program, and then find a min-cut in this graph. This cut determines the points where expressions should be moved in.
 
-### Why is this specific idea different from what had been done before? (DA) (O)
+### Why is this specific idea different from what had been done before? (DA) (X)
 
-*fill* me
+The authors claim that their work improves on a similar techinque was proposed by researches at Saarland Universie (DE) called vectorization analysis.
+They support their claim by providing evidance in the form of raw register pressure numbers making the claim that the said technique miss catagorizes some cases of divergent variables.
 
 ### Why is this specific idea different from what had been done before? (PR)
 
 No particular paper seems to have addressed the problem of doing partial redundancy elimination in SSA form programs using profiling information. By joining these two ideas: SSA form and profiling, the authors proposed something new.
 
-### Is there any algorithm involved in the solution? (DA) (O)
+### Is there any algorithm involved in the solution? (DA) (X)
 
-*fill* me
+Builds upon several other works for example converting to gated static single assignment form.
+The authors have introduced a language and operational semantics, rules for the language as well as a constraint system accompanied with proofs (structual induction).
 
 ### Is there any algorithm involved in the solution? (PR)
 
 There is the algorithm to solve the min-cut problem in directed graphs. This algorithm has polynomial time solution. It models the min-cut problem as a flow problem.
 
-### Is the solution exact, or does it approximate an optimal? In the latter case, what would be the price of finding the optimal? (DA) (O)
+### Is the solution exact, or does it approximate an optimal? In the latter case, what would be the price of finding the optimal? (DA) (X)
 
-*fill* me
+Approximate. Two techniques are described in the paper, the latter being more precise.
 
 ### Is the solution exact, or does it approximate an optimal? In the latter case, what would be the price of finding the optimal? (PR)
 
