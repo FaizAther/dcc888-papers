@@ -4,7 +4,7 @@
 
 ### What is the specific problem that the paper solves (DA) (O)
 
-*fill* me
+Introduction of a static analysis that discovers data divergence (coined, Divergence Analysis).
 
 ### What is the specific problem that the paper solves (PR)
 
@@ -12,7 +12,7 @@ The paper solves partial redundancy elimination with profiling information. Basi
 
 ### Why is this problem important (DA) (O)
 
-*fill* me
+To generate faster code for GPU's on the SIMD execution model.
 
 ### Why is this problem important (PR)
 
@@ -20,7 +20,7 @@ Partial redundancy elimination is important because it tends to speedup code. Mo
 
 ### Who will benefit immediately from the solution of this problem (DA) (O)
 
-*fill* me
+GPU's are being used for more general purpose programming these days for their thredded execution model (parellel execution) for speed up in performance. General programming and industrial applications of software tools.
 
 ### Who will benefit immediately from the solution of this problem (PR)
 
@@ -28,7 +28,7 @@ The main profiter is the compiler's back-end. This optimization may be implement
 
 ### What is the theory upon which the problem is defined? (DA) (O)
 
-*fill* me
+Static Analysis is the study of a program source code for compiler optimization phase of the pipline.
 
 ### What is the theory upon which the problem is defined? (PR)
 
@@ -106,7 +106,7 @@ The solution is exact. Of course, the exact solution relies on profiling informa
 
 ### How was the abstract organized? (DA) (O)
 
-*fill* me
+"Context - Problem - Solution - Results".
 
 ### How was the abstract organized? (PR)
 
@@ -114,7 +114,16 @@ The abstract is organized in the traditional "context - problem - solution - res
 
 ### How was the introduction organized? (DA) (O)
 
-*fill* me
+Eight paragraphs:
+
+1. Inroduction
+2. Context
+3. Background Concepts
+4. Problem definition
+5. Key concept
+6. Precision
+7. Artifacts
+8. References
 
 ### How was the introduction organized? (PR)
 
@@ -122,7 +131,14 @@ The introduction is organized in six paragraphs, that also follow the "context -
 
 ### What is discussed in each section of the paper? (DA) (O)
 
-*fill* me
+1. Introduction
+2. Background
+3. Divergence Analysis
+4. Divergence Aware Register Spiller
+5. Expreiments
+6. Conclusion
+7. Acknowledgement
+8. References
 
 ### What is discussed in each section of the paper? (PR)
 
@@ -130,7 +146,9 @@ The paper has six sections, which are divided as follows: - 1 Introduction - 2 B
 
 ### What was left for the conclusion? (DA) (O)
 
-*fill* me
+Reiteration of the problem statement, and referencing speific sections of the article where they provided solutions.
+The authors pointed out that their work can be expanded upon to provided a better user experience for programmers, they have identified that their work helps compilation but not the programmer and they have left hints for further work in this regard.
+Ending with why their work is important.
 
 ### What was left for the conclusion? (PR)
 
@@ -140,7 +158,14 @@ In the conclusion the authors repeated most of the contents of the abstract, thi
 
 ### Can you give a title to each paragraph in the introduction? (DA) (O)
 
-*fill* me
+1. *Inroduction*: GPU programming and usage trends;
+2. *Context*: GPUs: Parallel execution model;
+3. *Background Concepts*: Data and control divergence and how it relates to GPU instruction generation?;
+4. *Problem definition*: Purpose of this work;
+5. *Key concept*: Why is Divergence analysis important and current techniques;
+6. *Precision*: A more precise solution with comparision;
+7. *Artifacts*: Benchmarks, statistics and avalibility of artifacts;
+8. *References*: Impact and presentation of work.
 
 ### Can you give a title to each paragraph in the introduction? (PR)
 
@@ -148,7 +173,14 @@ In the conclusion the authors repeated most of the contents of the abstract, thi
 
 ### Can you find examples of sentence topics to every paragraph in the introduction? (DA) (O)
 
-*fill* me
+1. *Inroduction*: ;
+2. *Context*: ;
+3. *Background Concepts*: ;
+4. *Problem definition*: ;
+5. *Key concept*: ;
+6. *Precision*: ;
+7. *Artifacts*: ;
+8. *References*: .
 
 ### Can you find examples of sentence topics to every paragraph in the introduction? (PR)
 
