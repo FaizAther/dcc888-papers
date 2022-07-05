@@ -1,10 +1,10 @@
-# Divergence Analysis (Discusssion) (v.0.0.0)
+# Divergence Analysis (Discussion) (v.0.0.0)
 
 ## The problem that the paper discusses
 
 ### What is the specific problem that the paper solves
 
-Introduction of a static analysis that discovers data, control divergence (called, Divergence Analysis) to produce code for better register reousrce management in SIMD execution model.
+Introduction of a static analysis that discovers data, control divergence (called, Divergence Analysis) to produce code for better register resource management in SIMD execution model.
 
 ### Why is this problem important
 
@@ -12,11 +12,11 @@ To generate faster code for GPU's on the SIMD execution model.
 
 ### Who will benefit immediately from the solution of this problem
 
-GPU's are being used for more general purpose programming these days for their thredded execution model (parellel execution) for speed up in performance. General programming and industrial applications of software tools.
+GPU's are being used for more general purpose programming these days for their threaded execution model (parallel execution) for speed up in performance. General programming and industrial applications of software tools.
 
 ### What is the theory upon which the problem is defined?
 
-Static Analysis is the study of a program source code for compiler optimization phase of the code generation pipline.
+Static Analysis is the study of a program source code for compiler optimization phase of the code generation pipeline.
 
 ## The context of the paper
 
@@ -27,7 +27,7 @@ Compiler paper. Deals with providing compilers with techniques that help them un
 ### Since when is this context source of research?
 
 The authors have mentioned several material and have pointed out the close links this paper mentioning the key differences in detail.
-Automatic optimizations have been around for deacdes, the authors have mentioned various papers from the 1960's, 1990's and early 2000's.
+Automatic optimizations have been around for decades, the authors have mentioned various papers from the 1960's, 1990's and early 2000's.
 
 ### Is there any book that provides an in-depth overview of this problem?
 
@@ -45,13 +45,13 @@ Static Analysis.
 
 ### Why is this specific idea different from what had been done before?
 
-The authors claim that their work improves on a similar techinque was proposed by researches at Saarland Universie (DE) called vectorization analysis.
-They support their claim by providing evidance in the form of raw register pressure numbers making the claim that the said technique miss catagorizes some cases of divergent variables.
+The authors claim that their work improves on a similar technique was proposed by researches at Saarland University (DE) called vectorization analysis.
+They support their claim by providing evidence in the form of raw register pressure numbers making the claim that the said technique miss catagories some cases of divergent variables.
 
 ### Is there any algorithm involved in the solution?
 
 Builds upon several other works for example converting to gated static single assignment form.
-The authors have introduced a language and operational semantics, rules for the language as well as a constraint system accompanied with proofs (structual induction).
+The authors have introduced a language and operational semantics, rules for the language as well as a constraint system accompanied with proofs (structural induction).
 
 ### Is the solution exact, or does it approximate an optimal? In the latter case, what would be the price of finding the optimal?
 
@@ -67,7 +67,7 @@ Approximate. Two techniques are described in the paper, the latter being more pr
 
 Eight paragraphs:
 
-1. Inroduction
+1. Introduction
 2. Context
 3. Background Concepts
 4. Problem definition
@@ -82,14 +82,14 @@ Eight paragraphs:
 2. Background
 3. Divergence Analysis
 4. Divergence Aware Register Spiller
-5. Expreiments
+5. Experiments
 6. Conclusion
 7. Acknowledgement
 8. References
 
 ### What was left for the conclusion?
 
-Reiteration of the problem statement, and referencing speific sections of the article where they provided solutions.
+Reiteration of the problem statement, and referencing specific sections of the article where they provided solutions.
 The authors pointed out that their work can be expanded upon to provided a better user experience for programmers, they have identified that their work helps compilation but not the programmer and they have left hints for further work in this regard.
 Ending with why their work is important.
 
@@ -97,29 +97,29 @@ Ending with why their work is important.
 
 ### Can you give a title to each paragraph in the introduction?
 
-1. *Inroduction*: GPU programming and usage trends;
+1. *Introduction*: GPU programming and usage trends;
 2. *Context*: GPUs: Parallel execution model;
 3. *Background Concepts*: Data and control divergence and how it relates to GPU instruction generation?;
 4. *Problem definition*: Purpose of this work;
 5. *Key concept*: Why is Divergence analysis important and current techniques;
-6. *Precision*: A more precise solution with comparision;
-7. *Artifacts*: Benchmarks, statistics and avalibility of artifacts;
+6. *Precision*: A more precise solution with comparison;
+7. *Artifacts*: Benchmarks, statistics and availability of artifacts;
 8. *References*: Impact and presentation of work.
 
 ### Can you find examples of sentence topics to every paragraph in the introduction?
 
-1. *Inroduction*: and novel programming abstractionsare developed for them;
+1. *Introduction*: and novel programming abstractions are developed for them;
 2. *Context*: However, divergences may happen in less regular applications;
-3. *Background Concepts*: A thread identiﬁer, for instance, is inherentlydivergent;
-4. *Problem definition*: The main goal of this article is to provide compilers with techniques that help themunderstand and improve divergent code;
+3. *Background Concepts*: A thread identifier, for instance, is inherently divergent;
+4. *Problem definition*: The main goal of this article is to provide compilers with techniques that help them understand and improve divergent code;
 5. *Key concept*: The divergence analysis is important in different ways.;
 6. *Precision*: Second, in order to more precisely identify divergences;
-7. *Artifacts*: our implementation of the divergenceanalysis runs in linear time;
-8. *References*: work in divergence analysis for SIMD ar-chitectures.
+7. *Artifacts*: our implementation of the divergence analysis runs in linear time;
+8. *References*: work in divergence analysis for SIMD architectures.
 
 ### Can you give examples of techniques used to connect different paragraphs?
 
-The discussion of an aspect of the paper topic in one paragraph flows into the second paragraph where the aspect is touched on in a different light but also the issue presented in the previous paragprah is elaborated on. For example:
+The discussion of an aspect of the paper topic in one paragraph flows into the second paragraph where the aspect is touched on in a different light but also the issue presented in the previous paragraph is elaborated on. For example:
 
 1. However, divergences may happen in less regular applications. (Section 1, paragraph 2)
 2. Data divergence occurs if the same variable name is mapped to different . (Section 1, paragraph 3)
@@ -132,17 +132,17 @@ The discussion of an aspect of the paper topic in one paragraph flows into the s
 
 - Illustrative (Section 1, Paragraph 6, Sentence 4)
 
-  There exists a recent number of divergence-aware code op-timizations, such as Coutinho et al.’s [2011] branch fusion and Zhang et al.’s [2011]thread reallocation strategy.
+  There exists a recent number of divergence-aware code optimizations, such as Coutinho et al.’s [2011] branch fusion and Zhang et al.’s [2011]thread reallocation strategy.
 
 - Enumerative (Section 4, Paragraph 1, Sentence 2)
 
-  However, in the context of graphicsprocessing units, we have different types of memory to consider. (Register..., Shared Memory..., Local Memore..., Global Memory...).
+  However, in the context of graphics processing units, we have different types of memory to consider. (Register..., Shared Memory..., Local Memory..., Global Memory...).
 
 ## The related works
 
 ### What is the purpose of the related works section in this paper?
 
-No related work section, however there is a lot of detail in Section 2, Bacground about related works with references and key differences.
+No related work section, however there is a lot of detail in Section 2, Background about related works with references and key differences.
 
 ### What are the earliest papers about this problem?
 
@@ -178,7 +178,7 @@ No related work section, however there is a lot of detail in Section 2, Bacgroun
 
 ### Are the experiments rigorous enough?
 
-Since their work is used in an industry scenerio they have provided more than enough experiments.
+Since their work is used in an industry scenario they have provided more than enough experiments.
 
 ### Which visual resources have the authors used to present data?
 
@@ -208,17 +208,17 @@ Not much simple benchmarks, raw performance numbers.
 
 ### Which examples have the authors used to present their ideas?
 
-One simple example and one complex used throughout the section 2, Background section and in section 3, Divergence analysis. The authors have taken the exmaple forward making it very easy to follow with clarity.
+One simple example and one complex used throughout the section 2, Background section and in section 3, Divergence analysis. The authors have taken the example forward making it very easy to follow with clarity.
 
 ### Which visual resources have the authors used to explain their points?
 
-- Source code: 2 programs illustrating the idea of data divergene. (Section 2: Background Fig 1)
+- Source code: 2 programs illustrating the idea of data divergence. (Section 2: Background Fig 1)
 
 - Basic block diagram to describe execution of 1 program from section 2. (Section 3: Divergence Analysis Fig 8)
 
 - Conversion of the basic block diagram to GSA form. (Section 3: Divergence Analysis Fig 9)
 
-- Example program to illustrate Higher-Degree Polonomials. (Fig 15)
+- Example program to illustrate Higher-Degree Polynomials. (Fig 15)
 
 - Illustrated Assembly code of Fig 1: to introduce the divergence aware register spiller. (Section 4: Divergence Analysis Register spiller Fig 16 17 19)
 
@@ -226,4 +226,4 @@ One simple example and one complex used throughout the section 2, Background sec
 
 ### (Only in case there is on-line material available to support the paper) Which material is publicly available?
 
-The code is opensource implemented in the Ocelot industry compiler. See more, (<http://simdopt.wordpress.com>) and (<https://groups.google.com/g/gpuocelot>).
+The code is open-source implemented in the Ocelot industry compiler. See more, (<http://simdopt.wordpress.com>) and (<https://groups.google.com/g/gpuocelot>).
