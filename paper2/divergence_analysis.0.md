@@ -34,35 +34,36 @@ Static Analysis is the study of a program source code for compiler optimization 
 
 The paper is grounded by the theory of data-flow analyses. Indeed, throughout the paper the authors assume that the reader is familiar with concepts such as lattices, available expressions and very busy expressions. There is also a bit of graph theory in the paper, as the authors assume that the reader is familiar with the min-cut problem, and with maximal flow networks.
 
-## The context of the paper (O)
+## The context of the paper (X)
 
-### What is the general context of the paper? (DA) (O)
+### What is the general context of the paper? (DA) (X)
 
-*fill* me
+Compiler paper. Deals with providing compilers with techniques that help them understand and improve divergent code.
 
 ### What is the general context of the paper? (PR)
 
 This is a compiler's paper. It deals with partial redundancy elimination that is a classic compiler optimization. In an ideal world, compilers should take care of micro-optimizations; hence, freeing developers of this details.
 
-### Since when is this context source of research? (DA) (O)
+### Since when is this context source of research? (DA) (X)
 
-*fill* me
+The authors have mentioned several material and have pointed out the close links this paper mentioning the key differences in detail.
+Automatic optimizations have been around for deacdes, the authors have mentioned various papers from the 1990's and early 2000's.
 
 ### Since when is this context source of research? (PR)
 
 Partial Redundancy Elimination has been around for, at least, four decades. Profiling became a big part of the compiler's technology in the late eights, early nineties, with the advent of the www, and the rise of the interpreted languages.
 
-### Is there any book that provides an in-depth overview of this problem? (DA) (O)
+### Is there any book that provides an in-depth overview of this problem? (DA) (X)
 
-*fill* me
+Chapter 10 Instruction-level parallelism from the Dragon's book.
 
 ### Is there any book that provides an in-depth overview of this problem? (PR)
 
 Yes. As an example, we can find about partial redundancy elimination in the Dragon's book, chapter 9. In that book, PRE is used to illustrate how different data-flow analyses can be combined together.
 
-### What can we find about this context in wikipedia? (DA) (O)
+### What can we find about this context in wikipedia? (DA) (X)
 
-*fill* me
+<https://en.wikipedia.org/wiki/Data_dependency>
 
 ### What can we find about this context in wikipedia? (PR)
 
