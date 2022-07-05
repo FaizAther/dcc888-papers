@@ -267,7 +267,9 @@ Partial Redundancy Elimination is not exactly a hot topic of research. None of t
 ### Which points do the authors try to prove with experiments? (DA) (X)
 
 - Reporting number of divergent variables.
+
 - Performance improvement of generated code.
+
 - Register pressure.
 
 ### Which points do the authors try to prove with experiments? (PR)
