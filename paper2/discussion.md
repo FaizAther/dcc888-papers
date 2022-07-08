@@ -226,4 +226,4 @@ One simple example and one complex used throughout the section 2, Background sec
 
 ### (Only in case there is on-line material available to support the paper) Which material is publicly available?
 
-The code is open-source implemented in the Ocelot industry compiler. See more, (<http://simdopt.wordpress.com>) and (<https://groups.google.com/g/gpuocelot>).
+The code is open-source implemented in the Ocelot industry compiler. See more, (<http://simdopt.wordpress.com>), (<https://llvm.org/doxygen/LegacyDivergenceAnalysis_8cpp_source.html>) and (<https://groups.google.com/g/gpuocelot>).
